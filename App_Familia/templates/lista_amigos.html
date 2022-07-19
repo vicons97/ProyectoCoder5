@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de amigos</title>
+</head>
+<body>
+   
+   <h1>Listado de amigos:</h1>
+
+
+   
+   
+    <ul>
+
+        
+        {% for amigos in lista_amigos %}
+
+            <li>{{amigos.nombre}} {{amigos.apellido}} - Edad: {{amigos.edad}} - Altura: {{amigos.altura}} metros - Fecha de Nacimiento: {{amigos.fecha_de_nacimiento}}</li>
+            
+        {% endfor %}
+            
+
+    </ul>
+
+</body>
+</html>
