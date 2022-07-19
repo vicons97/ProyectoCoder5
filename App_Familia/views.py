@@ -48,3 +48,30 @@ def lista_mascotas(self):
     lista = Mascotas.objects.all()
 
     return render(self, "lista_mascotas.html", {'lista_mascotas': lista})
+
+
+
+def inicio(self):
+
+    return render(self, "inicio.html")
+
+def estudiantes(self):
+
+    return render(self, "estudiantes.html")
+    #return HttpResponse("Vista de estudiantes")
+
+def profesores(self):
+
+    return render(self, "profesores.html")
+
+def cursos(self):
+
+    return render(self, "cursos.html")
+
+def entregables(self):
+
+    return render(self, "entregables.html")
+
+
+
+
